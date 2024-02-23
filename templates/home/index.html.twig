@@ -3,7 +3,7 @@
 {% block title %}Hello HomeController!{% endblock %}
 
 {% block body %}
-    <section class="scroll w-full h-full box-border overflow-y-scroll z-10">
+    <section id="scrollable-element" class="scroll w-full h-full box-border overflow-y-scroll z-10">
         {{ include('home/includes/_hero.html.twig') }}
         {{ include('home/includes/_about.html.twig') }}
         {{ include('home/includes/_projects.html.twig') }}
