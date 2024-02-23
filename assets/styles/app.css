@@ -1,7 +1,0 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.scroll {
-    scrollbar-color: #2B2826 #191716;
-}

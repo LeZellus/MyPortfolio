@@ -1,0 +1,76 @@
+.nav {
+  @apply absolute bg-tertiary h-[calc(100%-33px)] transform left-1/2 -translate-x-1/2 w-[calc(100%-66px)] z-10 bottom-[calc(100%+33px)] mt-0.5;
+
+  &-separator {
+    @apply w-16 h-0.5 bg-tertiary-400 mx-auto relative;
+
+    &-square {
+      @apply w-1 h-1 absolute transform left-1/2 -translate-x-1/2
+    }
+  }
+
+  & .secondary {
+    @apply top-full bg-secondary;
+  }
+
+  & .primary {
+    @apply bottom-full bg-primary;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    bottom: calc(100% + 33px);
+  }
+  to {
+    bottom: 0;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: calc(100% + 33px);
+  }
+}
+
+/* Classe pour gérer l'état 'ouvert' de la navigation */
+.nav-open {
+  animation: slideDown 0.5s forwards;
+}
+
+/* Classe pour gérer l'état 'fermé' de la navigation */
+.nav-close {
+  animation: slideUp 0.5s forwards;
+}
+
+
+@keyframes navFooterDown {
+  from {
+    bottom: -200px;
+  }
+  to {
+    bottom: 0;
+  }
+}
+
+@keyframes navFooterUp {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: -200px;
+  }
+}
+
+/* Classe pour gérer l'état 'ouvert' de la navigation */
+.nav-footer-open {
+  animation: navFooterDown 0.5s forwards;
+}
+
+/* Classe pour gérer l'état 'fermé' de la navigation */
+.nav-footer-close {
+  animation: navFooterUp 0.5s forwards;
+}

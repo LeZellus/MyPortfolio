@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "components/index";
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.family {
+    font-family: "JetBrains Mono", serif;
+}
+
+.scroll {
+    scrollbar-color: #2B2826 #191716;
+}
