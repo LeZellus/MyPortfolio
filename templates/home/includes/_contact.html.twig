@@ -1,8 +1,12 @@
 <section id="contact" class="section">
-    <div class="flex gap-2 items-baseline mb-16">
-        <span class="section-number">0100.</span>
+    <div class="flex gap-2 items-baseline mb-4 lg:mb-16 flex-col lg:flex-row">
+        <div class="flex gap-2 items-baseline w-full lg:hidden">
+            <span class="section-number">0100.</span>
+            <span class="ml-2 max-w-48 w-full h-0.5 bg-secondary self-center"></span>
+        </div>
+        <span class="section-number lg:flex hidden">0100.</span>
         <h2>Contactez-moi !</h2>
-        <span class="ml-2 w-48 h-0.5 bg-secondary self-center"></span>
+        <span class="ml-2 w-48 h-0.5 bg-secondary self-center lg:flex hidden"></span>
     </div>
 
     <form action="" class="form">
@@ -16,7 +20,7 @@
             <input class="form-input" id="subject" type="text" placeholder="Proposition de travail">
         </div>
 
-        <div class="col-span-2 grid gap-2">
+        <div class="lg:col-span-2 grid gap-2">
             <label class="form-label" for="message">Votre message</label>
             <textarea class="form-input" id="message" name="message" cols="30" rows="10" placeholder="Je vous contacte pour ..."></textarea>
         </div>
