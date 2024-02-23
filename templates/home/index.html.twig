@@ -4,28 +4,10 @@
 
 {% block body %}
     <section class="scroll w-full h-full box-border overflow-y-scroll z-10">
-        <section class="w-full h-full max-w-5xl">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium commodi cum laboriosam odio sunt unde? Asperiores distinctio laborum nisi nobis quisquam, reiciendis? Dicta ipsum laboriosam porro rerum soluta unde voluptate!</p>
-        </section>
-        <section class="w-full h-full max-w-5xl">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium commodi cum laboriosam odio sunt unde? Asperiores distinctio laborum nisi nobis quisquam, reiciendis? Dicta ipsum laboriosam porro rerum soluta unde voluptate!</p>
-
-        </section>
-        <section class="w-full h-full max-w-5xl">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium commodi cum laboriosam odio sunt unde? Asperiores distinctio laborum nisi nobis quisquam, reiciendis? Dicta ipsum laboriosam porro rerum soluta unde voluptate!</p>
-
-        </section>
-        <section class="w-full h-full max-w-5xl">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium commodi cum laboriosam odio sunt unde? Asperiores distinctio laborum nisi nobis quisquam, reiciendis? Dicta ipsum laboriosam porro rerum soluta unde voluptate!</p>
-
-        </section>
-        <section class="w-full h-full max-w-5xl">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium commodi cum laboriosam odio sunt unde? Asperiores distinctio laborum nisi nobis quisquam, reiciendis? Dicta ipsum laboriosam porro rerum soluta unde voluptate!</p>
-
-        </section>
-        <section class="w-full h-full max-w-5xl">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium commodi cum laboriosam odio sunt unde? Asperiores distinctio laborum nisi nobis quisquam, reiciendis? Dicta ipsum laboriosam porro rerum soluta unde voluptate!</p>
-
-        </section>
+        {{ include('home/includes/_hero.html.twig') }}
+        {{ include('home/includes/_about.html.twig') }}
+        {{ include('home/includes/_projects.html.twig') }}
+        {{ include('home/includes/_skills.html.twig') }}
+        {{ include('home/includes/_contact.html.twig') }}
     </section>
 {% endblock %}

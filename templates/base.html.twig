@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
         <title>{% block title %}Welcome!{% endblock %}</title>
        {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
@@ -13,6 +13,7 @@
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
             {{ encore_entry_script_tags('nav') }}
+            {{ encore_entry_script_tags('skills') }}
             {% block importmap %}{{ importmap('app') }}{% endblock %}
         {% endblock %}
     </head>
@@ -23,9 +24,9 @@
         <main class="w-full h-full border-x border-secondary relative">
 
             <div id="nav-button-open" class="flex justify-between flex-col h-12 w-16 items-end absolute top-8 right-8 group cursor-pointer">
-                <div class="w-full h-1 bg-primary"></div>
-                <div class="w-12 h-1 bg-primary group-hover:w-full transition-width duration-200"></div>
-                <div class="w-8 h-1 bg-primary group-hover:w-full transition-width duration-300"></div>
+                <div class="w-full h-0.5 bg-primary"></div>
+                <div class="w-12 h-0.5 bg-primary group-hover:w-full transition-width duration-200"></div>
+                <div class="w-8 h-0.5 bg-primary group-hover:w-full transition-width duration-300"></div>
             </div>
             {% block body %}
 

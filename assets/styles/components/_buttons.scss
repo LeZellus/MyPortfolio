@@ -1,0 +1,63 @@
+.btn {
+  @apply bg-tertiary text-base py-5 px-7 relative border border-primary family cursor-pointer text-primary;
+
+  &-square {
+    @apply w-1 h-1 absolute;
+  }
+
+  &-square1 {
+    @apply bg-primary top-0 left-0;
+  }
+
+  &-square2 {
+    @apply bg-quaternary left-1 top-0;
+  }
+
+  &-square3 {
+    @apply bg-quaternary left-0 top-1;
+  }
+
+  &-square4 {
+    @apply bg-primary bottom-0 right-0;
+  }
+}
+
+.btn:hover .btn-square2 {
+  animation: slideRightAndDown .3s forwards;
+}
+
+.btn:hover .btn-square3 {
+  animation: slideDownAndRight .3s forwards;
+}
+
+.btn:not(:hover) .btn-square2 {
+  animation: slideBackFromRightAndDown .3s forwards;
+}
+
+.btn:not(:hover) .btn-square3 {
+  animation: slideBackFromDownAndRight .3s forwards;
+}
+
+@keyframes slideBackFromRightAndDown {
+  0% { top: calc(100% - .5rem); left: calc(100% - .25rem); }
+  50% { top: 0; left: calc(100% - .25rem); }
+  100% { top: 0; left: .25rem; }
+}
+
+@keyframes slideBackFromDownAndRight {
+  0% { top: calc(100% - .25rem); left: calc(100% - .5rem); }
+  50% { top: calc(100% - .25rem); left: 0;}
+  100% { top: .25rem; left: 0; }
+}
+
+@keyframes slideRightAndDown {
+  0% { top: 0; left: .25rem; }
+  50% { top: 0; left: calc(100% - .25rem); } /* Se déplace vers la droite à l'intérieur du bouton */
+  100% { top: calc(100% - .5rem); left: calc(100% - .25rem); } /* Puis descend à l'intérieur */
+}
+
+@keyframes slideDownAndRight {
+  0% { top: .5rem; left: 0; }
+  50% { top: calc(100% - .25rem); left: 0; } /* Se déplace vers le bas à l'intérieur du bouton */
+  100% { top: calc(100% - .25rem); left: calc(100% - .5rem); } /* Puis vers la droite à l'intérieur */
+}

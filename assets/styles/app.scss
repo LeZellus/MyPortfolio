@@ -6,6 +6,19 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    @apply text-quaternary;
+}
+
+h1 {
+    @apply text-7xl font-extrabold;
+}
+
+h2 {
+    @apply text-2xl text-quaternary-400 font-extrabold;
+}
+
+h3 {
+    @apply text-xl text-secondary font-extrabold;
 }
 
 .family {

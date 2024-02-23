@@ -1,0 +1,7 @@
+.section {
+  @apply w-full h-full max-w-5xl mx-auto flex flex-col justify-center p-8 gap-4;
+
+  &-number {
+    @apply text-primary family;
+  }
+}
