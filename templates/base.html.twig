@@ -8,7 +8,30 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <!-- Primary Meta Tags -->
+        <meta name="title" content="Mathéo Zeller | Développeur Pixel" />
+        <meta name="description" content="Découvrez Mathéo Zeller, développeur innovant : portfolio de projets web, mobiles et embarqués, mêlant technologie avancée et créativité unique." />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://matheozeller.fr/" />
+        <meta property="og:title" content="Mathéo Zeller | Développeur Pixel" />
+        <meta property="og:description" content="Découvrez Mathéo Zeller, développeur innovant : portfolio de projets web, mobiles et embarqués, mêlant technologie avancée et créativité unique." />
+        <meta property="og:image" content="{{ asset('uploads/metatag.png') }}" />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://matheozeller.fr/" />
+        <meta property="twitter:title" content="Mathéo Zeller | Développeur Pixel" />
+        <meta property="twitter:description" content="Découvrez Mathéo Zeller, développeur innovant : portfolio de projets web, mobiles et embarqués, mêlant technologie avancée et créativité unique." />
+        <meta property="twitter:image" content="{{ asset('uploads/metatag.png') }}" />
+
+        <!-- Meta Tags Generated with https://metatags.io -->
+
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('uploads/portfolio_icon.png') }}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('uploads/portfolio_icon.png') }}">
+
+        <title>Mathéo Zeller | Développeur Pixel !</title>
        {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
         {% endblock %}
