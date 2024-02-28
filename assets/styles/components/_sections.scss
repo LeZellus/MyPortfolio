@@ -1,5 +1,5 @@
 .section {
-  @apply w-full md:h-full min-h-screen max-w-5xl mx-auto flex flex-col justify-center p-8 gap-4;
+  @apply w-full min-h-screen max-w-5xl mx-auto flex flex-col justify-center p-8 py-16 gap-4;
 
   &-number {
     @apply text-primary family;
